@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>CrossPark Location</title>
+
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/angular/angular-csp.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- your app's js -->
+    <script src="lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+    
+    <div ng-controller="LocationController">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="margin-top">
+            <a href="index.html" style="float: left"><i class="fa fa-2x fa-arrow-left" aria-hidden="true"></i></a>
+            <h3 class="right"><i class="fa fa-phone" aria-hidden="true"></i> 315.331.9120</h3>
+
+            </p>
+            <h3 class="margin-top">CrossPark Family Restaurant</h3> 
+            <div class="row">
+              <div class="col-xs-2">
+                <p class="margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+              </div>
+              <div class="col-xs-10">
+                <p class="margin-top">1121 E Union Street<br/>Newark NY 14513</p>
+              </div>
+            </div>
+
+
+            <h3 class="margin-top">Hours</h3> 
+            <div class="row">
+              <div class="col-xs-2">
+                <p class="margin-top"><i class="fa fa-clock-o" aria-hidden="true"></i></p>
+              </div>
+              <div class="col-xs-10">
+                <p class="margin-top">
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MON<br/>
+                      TUE<br/>
+                      WED<br/>
+                      THU<br/>
+                      FRI<br/>
+                      SAT<br/>
+                      SUN
+                    </div>
+                    <div class="col-xs-10">
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 10:00 PM<br/>
+                   6:00 AM - 9:00 PM
+                    </div>
+                  </div>
+                  
+                </p>
+              </div>
+            </div>
+
+            <iframe width="100%" height="300px" class="google-maps-mobile" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=crosspark%20family%20restaurant&key=AIzaSyBp8Q6S8qpO4Yu95mO-FuYTOUeoTw0CTrM" allowfullscreen></iframe>
+
+            <footer>
+              <p>
+                <a href="https://www.facebook.com/CrossParkRestaurant" target="_blank">FACEBOOK</a>
+                <a  href="mailto:crosspark@aol.com" target="_blank">CONTACT</a>
+                <a href="apply.html">APPLY</a>
+              </p>
+              <p>
+                <a href="#">&copy;</a> 2016 <a href="http://www.athanasiosbabasidis.com/" target="_blank">Athanasios Babasidis</a>
+              </p>
+            </footer>
+
+          </div>  
+
+          
+
+          <div class="col-sm-6 margin-top">
+            <div class="google-maps-loading center">
+              <h1 class="margin-top">loading google maps</h1>
+              <p class="margin-top">If maps do not load, <a href="https://www.google.com/maps/embed/v1/place?q=crosspark%20family%20restaurant&key=AIzaSyBp8Q6S8qpO4Yu95mO-FuYTOUeoTw0CTrM">click here</a>.</p>
+              <p class="margin-top"><i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i></p>
+            </div>
+            <iframe width="50%" height="100vh" class="google-maps" frameborder="0" style="border:0; position: fixed; top:0; height:100vh;left:50%;" src="https://www.google.com/maps/embed/v1/place?q=crosspark%20family%20restaurant&key=AIzaSyBp8Q6S8qpO4Yu95mO-FuYTOUeoTw0CTrM" allowfullscreen></iframe>
+            
+          </div>  
+        </div>
+      </div>
+     
+
+  </body>
+</html>

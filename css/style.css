@@ -1,0 +1,137 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+	font-family: Myanmar;
+	src: url('fonts/MyanmarSangamMN.ttf');
+}
+body {
+	font-family: Myanmar, Helvetica, sans-serif;
+	background: #DA7E81;
+	color: #F4F4F2;
+}
+a {
+	color: #F4F4F2;
+}
+a:hover {
+	text-decoration: none;
+	color: #F4F4F2;
+}
+a:visited {
+	text-decoration: none;
+	color: #F4F4F2;
+}
+
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.margin {
+	margin:5%;
+}
+.margin-top {
+	margin-top: 50px !important;
+}
+.input_width_full, select, textarea {
+	width: 100%;
+}
+input[type=text], select {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	height: 35px;
+}
+.label {
+	padding: 0;
+}
+
+.background-image {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	top: 0;
+	z-index: -9999;
+	opacity: 0.5;
+}
+form {
+	background: #FFFFFF;
+	padding: 5%;
+	box-shadow: 7px 7px 50px #000000;
+	color: #000000 !important;
+}
+form label, form h3 {
+	color: #000000 !important;
+}
+
+.bar {
+	color: #F4F4F2;
+	margin: 2%;
+}
+.bar a:first {
+	float: left;
+}
+
+.home-content, .menu-content {
+	text-align: center;
+}
+.home-content h2, .home-content h3 {
+	color: #F4F4F2;
+}
+.home-content .logo-image {
+	width: 40%;
+	max-width:320px;
+	min-width: 250px;
+}
+.home-content button, .menu-content button {
+	background: none;
+	border: 2px solid #F4F4F2;
+	padding: 15px;
+	margin: 1%;
+	min-width: 200px;
+}
+.home-content button:hover, .menu-content button:hover {
+	background: #F4F4F2;
+	color: #ccc;
+}
+.submit-button {
+	background: #7EDA96;
+	color: #F4F4F2;
+	border-radius: 0;
+	border: 1px solid #7EDA96;
+	padding:15px;
+	box-shadow: 5px 5px 25px #ccc;
+}
+.submit-button:hover {
+	background: #F4F4F2;
+	color: #7EDA96;
+	border-radius: 0;
+	border: 1px solid #7EDA96;
+	padding:15px;
+	box-shadow: 5px 5px 25px #ccc;
+}
+
+@media(max-width: 768px) {
+	.google-maps, .google-maps-loading {
+		display: none;
+	}
+}
+@media(min-width: 768px) {
+	.google-maps-mobile {
+		display: none;
+	}
+}
+
+
+footer {
+	margin-top:75px;
+	text-align: center;
+	color: #F4F4F2;
+}
+footer a {
+	margin: 1%;
+	color: #F4F4F2;
+}
+footer a:hover {
+	border-bottom: 2px solid #F4F4F2;
+}

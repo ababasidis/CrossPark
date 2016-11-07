@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>CrossPark Careers</title>
+
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/angular/angular-csp.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- your app's js -->
+    <script src="lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" onload="init()">
+  	<div class="bar">
+          <a href="index.html" style="float: left"><i class="fa fa-2x fa-arrow-left" aria-hidden="true"></i></a>
+          <h3 class="right"><i class="fa fa-phone" aria-hidden="true"></i> 315.331.9120</h3>
+    </div>
+  	<div class="container margin-top">
+  		<div class="col-md-3">
+	  		<p class="margin-top">We know that the spirit and integrity of our brand starts with our people. That’s why we only hire the best. Our employees are:</p>
+
+			<ul>
+				<li>Self-motivated, with a competitive spirit that inspires others.</li>
+				<li>Customer-focused and consistently driven to provide quality service.</li>
+				<li>Energetic multi-taskers, who thrive in a fast-paced setting.</li>
+				<li>Professional in personal appearance and attitude.</li>
+				<li>Friendly team players, ready to lend a hand wherever needed.</li>
+				<li>Skilled, with previous experience in the hospitality industry.</li>
+			</ul>
+
+			<p>All offers of employment are subject to verification of your legal right to work in the United States. If offered employment, you will be notified of the proof you will need to submit to the Company to establish your right to work in the United States.</p>
+
+			<p>To apply for a position, please fill in the form to the best of your abilities.</p>
+
+			<p>Applications are kept for no more than thirty days. Note, some fields are required. </p>
+
+			<p>Applicants must be at least 16 years of age.</p>
+  		</div>
+  		<div class="col-md-9">
+		  	<form id="newForm" action="form-processor.php" method="post">
+		  		<h3>Application for Employment</h3>
+				<div class="row">
+					<div class="col-sm-6 margin-none">
+						<label class="label" id="lb">First Name </label>
+						<input class="input_width_full" type="text" name="firstname" required id="firstname">
+					</div>
+					<div class="col-sm-6 margin-none">
+						<label class="label block">Last Name</label>
+						<input class="input_width_full" type="text" name="lastname" required id="lastname">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 margin-none">	
+						<label class="label block" id="lb">Phone </label>
+						<input class="input_width_full" type="tel" name="phone" required placeholder="(315) 331-9120" id="phone">
+					</div>
+					<div class="col-sm-6 margin-none">
+						<label class="label block" id="lb">Email </label>
+						<input class="input_width_full" type="email" required placeholder="email@crosspark.com" name="email" id="email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 margin-none">
+						<label class="label block" id="lb">Address 1</label>
+						<input class="input_width_full" type="text" required name="address1" id="address1">
+					</div>
+					<div class="col-sm-6 margin-none">
+						<label class="label block" id="lb">Address 2</label>
+						<input class="input_width_full" type="text" name="address2" placeholder="optional" id="address2">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 margin-none">
+						<label class="label block" id="lb">City</label>			
+						<input class="input_width_full" type="text" required name="city" id="city">
+					</div>
+					<div class="col-sm-2 margin-none">
+						<label class="label block" id="lb">State</label>			
+						<select class="input_width_full" name="state" id="stateselects" required>
+							<option value="">--</option>
+						</select>
+						
+					</div>
+					<div class="col-sm-4 margin-none">
+						<label class="label block" id="lb">ZIP</label>			
+						<input class="input_width_full" type="text" required placeholder="14513" name="zip" id="zip">
+					</div>
+				</div>
+				<div class="row">
+					<br/><h4>Employment Details</h4><br/>
+					<div class="col-sm-4 margin-none" id="citizen-select">
+						<label class="label block" id="lb">Citizenship </label>
+						<div id="menuSelects">
+							<select required name="citizenship" id="selects" placeholder="ZIP" onChange="addAgeSelect(this.selectedIndex)">
+								<option value="">Select Citizenship</option>
+								<option value="1">United States</option>
+								<option value="2">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-4 margin-none" id="age-select"></div>
+					<div class="col-sm-4 margin-none" id="pos-select"></div>
+					<br/><br/><br/><br/><br/><br/><br/>
+					<div class="row margin" id="comment"></div>
+					<div class="row margin">
+						<input class="submit-button" id="submit" type="submit" value="SUBMIT" onclick="submitCookies()">
+					</div>
+				</div>
+			</form>
+  		</div>
+  	</div>
+
+  	<footer>
+      <p>
+        <a href="https://www.facebook.com/CrossParkRestaurant" target="_blank">FACEBOOK</a>
+        <a href="mailto:crosspark@aol.com" target="_blank">CONTACT</a>
+        <a href="apply.html">APPLY</a>
+      </p>
+      <p>
+        <a href="#">&copy;</a> 2016 <a href="http://www.athanasiosbabasidis.com/" target="_blank">Athanasios Babasidis</a>
+      </p>
+    </footer>
+	
+				
+</body>
+</html>
